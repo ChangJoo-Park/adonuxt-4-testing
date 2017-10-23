@@ -41,5 +41,10 @@ module.exports = {
   /*
   ** Point to resources
   */
-  srcDir: resolve(__dirname, '..', 'resources')
+  srcDir: resolve(__dirname, '..', 'resources'),
+  build: {
+    babel: {
+      presets: ['es2015', 'stage-0']
+    }
+  }
 }
