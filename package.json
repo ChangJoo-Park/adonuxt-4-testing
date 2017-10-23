@@ -32,6 +32,7 @@
     "nuxt": "^1.0.0-rc11"
   },
   "devDependencies": {
+    "babel-preset-stage-0": "^6.24.1",
     "nodemon": "^1.12.1",
     "standard": "^10.0.3"
   },

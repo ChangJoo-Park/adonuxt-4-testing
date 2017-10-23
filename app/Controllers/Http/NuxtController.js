@@ -12,13 +12,12 @@ class NuxtController {
 
     // Start build process (only in development)
     if (config.dev) {
-      console.log('config dev')
       new Builder(this.nuxt).build()
     }
   }
 
   async render ({ request, response }) {
-    await this.nuxt.render(request.request, response.response)
+    this.nuxt.render(request.request, response.response)
   }
 }
 
